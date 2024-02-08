@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9234A6D52B74A0CF00384174 /* .SwitfLint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 9234A6D42B74A0CF00384174 /* .SwitfLint.yml */; };
 		92C793E52B742B5700820E0C /* Swift_SolidPrinicpleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C793E42B742B5700820E0C /* Swift_SolidPrinicpleApp.swift */; };
 		92C793E72B742B5700820E0C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C793E62B742B5700820E0C /* ContentView.swift */; };
 		92C793E92B742B7700820E0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C793E82B742B7700820E0C /* Assets.xcassets */; };
@@ -14,6 +15,13 @@
 		92C793F62B742B7800820E0C /* Swift_SolidPrinicpleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C793F52B742B7800820E0C /* Swift_SolidPrinicpleTests.swift */; };
 		92C794002B742B7800820E0C /* Swift_SolidPrinicpleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C793FF2B742B7800820E0C /* Swift_SolidPrinicpleUITests.swift */; };
 		92C794022B742B7800820E0C /* Swift_SolidPrinicpleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C794012B742B7800820E0C /* Swift_SolidPrinicpleUITestsLaunchTests.swift */; };
+		92C7940F2B742B9C00820E0C /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C7940E2B742B9C00820E0C /* CommentsView.swift */; };
+		92C794112B742BB100820E0C /* CommentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C794102B742BB100820E0C /* CommentsModel.swift */; };
+		92C794132B742BC000820E0C /* CommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C794122B742BC000820E0C /* CommentsViewModel.swift */; };
+		92C794152B742BCC00820E0C /* CommentsViewServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C794142B742BCC00820E0C /* CommentsViewServices.swift */; };
+		92C794172B742BE100820E0C /* CommentsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C794162B742BE100820E0C /* CommentsRow.swift */; };
+		92C794192B742BFC00820E0C /* DetailCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C794182B742BFC00820E0C /* DetailCommentView.swift */; };
+		92C7941B2B742C0B00820E0C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C7941A2B742C0B00820E0C /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9234A6D42B74A0CF00384174 /* .SwitfLint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .SwitfLint.yml; sourceTree = "<group>"; };
 		92C793E12B742B5700820E0C /* Swift-SolidPrinicple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-SolidPrinicple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C793E42B742B5700820E0C /* Swift_SolidPrinicpleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_SolidPrinicpleApp.swift; sourceTree = "<group>"; };
 		92C793E62B742B5700820E0C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +53,13 @@
 		92C793FB2B742B7800820E0C /* Swift-SolidPrinicpleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-SolidPrinicpleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C793FF2B742B7800820E0C /* Swift_SolidPrinicpleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_SolidPrinicpleUITests.swift; sourceTree = "<group>"; };
 		92C794012B742B7800820E0C /* Swift_SolidPrinicpleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_SolidPrinicpleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		92C7940E2B742B9C00820E0C /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
+		92C794102B742BB100820E0C /* CommentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsModel.swift; sourceTree = "<group>"; };
+		92C794122B742BC000820E0C /* CommentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewModel.swift; sourceTree = "<group>"; };
+		92C794142B742BCC00820E0C /* CommentsViewServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewServices.swift; sourceTree = "<group>"; };
+		92C794162B742BE100820E0C /* CommentsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsRow.swift; sourceTree = "<group>"; };
+		92C794182B742BFC00820E0C /* DetailCommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCommentView.swift; sourceTree = "<group>"; };
+		92C7941A2B742C0B00820E0C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +90,7 @@
 		92C793D82B742B5700820E0C = {
 			isa = PBXGroup;
 			children = (
+				9234A6D42B74A0CF00384174 /* .SwitfLint.yml */,
 				92C793E32B742B5700820E0C /* Swift-SolidPrinicple */,
 				92C793F42B742B7800820E0C /* Swift-SolidPrinicpleTests */,
 				92C793FE2B742B7800820E0C /* Swift-SolidPrinicpleUITests */,
@@ -98,6 +115,13 @@
 				92C793E62B742B5700820E0C /* ContentView.swift */,
 				92C793E82B742B7700820E0C /* Assets.xcassets */,
 				92C793EA2B742B7700820E0C /* Preview Content */,
+				92C7940E2B742B9C00820E0C /* CommentsView.swift */,
+				92C794102B742BB100820E0C /* CommentsModel.swift */,
+				92C794122B742BC000820E0C /* CommentsViewModel.swift */,
+				92C794142B742BCC00820E0C /* CommentsViewServices.swift */,
+				92C794162B742BE100820E0C /* CommentsRow.swift */,
+				92C794182B742BFC00820E0C /* DetailCommentView.swift */,
+				92C7941A2B742C0B00820E0C /* NetworkManager.swift */,
 			);
 			path = "Swift-SolidPrinicple";
 			sourceTree = "<group>";
@@ -137,6 +161,7 @@
 				92C793DD2B742B5700820E0C /* Sources */,
 				92C793DE2B742B5700820E0C /* Frameworks */,
 				92C793DF2B742B5700820E0C /* Resources */,
+				9234A6D12B74A01100384174 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -232,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92C793EC2B742B7700820E0C /* Preview Assets.xcassets in Resources */,
+				9234A6D52B74A0CF00384174 /* .SwitfLint.yml in Resources */,
 				92C793E92B742B7700820E0C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,13 +278,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9234A6D12B74A01100384174 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Adds support for Apple Silicon brew directory\n# export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint autocorrect --format\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		92C793DD2B742B5700820E0C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92C7941B2B742C0B00820E0C /* NetworkManager.swift in Sources */,
+				92C794152B742BCC00820E0C /* CommentsViewServices.swift in Sources */,
+				92C794132B742BC000820E0C /* CommentsViewModel.swift in Sources */,
 				92C793E72B742B5700820E0C /* ContentView.swift in Sources */,
+				92C794192B742BFC00820E0C /* DetailCommentView.swift in Sources */,
+				92C794112B742BB100820E0C /* CommentsModel.swift in Sources */,
 				92C793E52B742B5700820E0C /* Swift_SolidPrinicpleApp.swift in Sources */,
+				92C794172B742BE100820E0C /* CommentsRow.swift in Sources */,
+				92C7940F2B742B9C00820E0C /* CommentsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
