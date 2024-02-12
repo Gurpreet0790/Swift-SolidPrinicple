@@ -46,7 +46,7 @@ class NetworkManager {
 }
 
 class APIHandler{
-    func fetchData(url: URL, completion: @escaping(Result<[CommentsModel], DemoError>) -> Void) {
+    func fetchData(url: URL, completion: @escaping(Result<Data, DemoError>) -> Void) {
      
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data, error == nil else {
@@ -59,7 +59,7 @@ class APIHandler{
 }
 
 class ResponseHandler{
-    func fetchModel<T: Codable>(type: T.Type,data: Data,completion: @escaping(Result<[CommentsModel], DemoError>) -> Void) {
+    func fetchModel<T: Codable>(type: T.Type,data: Data, completion: (Result<T, DemoError>) -> Void) {
         let commentResponse = try? JSONDecoder().decode(type.self, from: data)
         if let commentResponse = commentResponse {
             return completion(.success(commentResponse))

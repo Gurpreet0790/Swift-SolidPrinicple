@@ -33,9 +33,7 @@ func fetchUsers() {
         DispatchQueue.main.async {
             switch result {
             case .success(let comments):
-                print("Fetched new Comments")
-//                self.comments = comments
-                
+                print("Fetched new Comments")                
             case .failure(let error):
                 print(error)
             }
