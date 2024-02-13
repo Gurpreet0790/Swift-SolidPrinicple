@@ -124,9 +124,9 @@
 				92C794162B742BE100820E0C /* CommentsRow.swift */,
 				92C794182B742BFC00820E0C /* DetailCommentView.swift */,
 				92C7941A2B742C0B00820E0C /* NetworkManager.swift */,
-				928AC5BD2B7AE75E004156DD /* Readme.md */,
 				928AC5BE2B7AEE7B004156DD /* DatabaseHandler.swift */,
 				928AC5C02B7AF639004156DD /* Comments.json */,
+				928AC5BD2B7AE75E004156DD /* Readme.md */,
 			);
 			path = "Swift-SolidPrinicple";
 			sourceTree = "<group>";

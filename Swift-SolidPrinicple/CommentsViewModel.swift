@@ -10,10 +10,10 @@ import Foundation
 class CommentsViewModel: ObservableObject{
     
     let serviceHandler: CommentsViewServicesDelegate
-    let databasehandler: CommentsViewServicesDelegate
+    let databasehandler: CommentsDelegate
     @Published var comments = [CommentsModel]()
     
-    init(serviceHandler: CommentsViewServicesDelegate = CommentsViewServices(), databasehandler: CommentsViewServicesDelegate = CommentsViewServices(), comments: [CommentsModel] = [CommentsModel]()) {
+    init(serviceHandler: CommentsViewServicesDelegate = CommentsViewServices(), databasehandler: CommentsDelegate = DatabaseHandler(), comments: [CommentsModel] = [CommentsModel]()) {
         self.serviceHandler = serviceHandler
         self.databasehandler = databasehandler
         self.comments = comments
@@ -21,7 +21,22 @@ class CommentsViewModel: ObservableObject{
     func fetchComments() {
         
         if isNetworkConnected() {
-            CommentsViewServices().getComments { result in
+            serviceHandler.getComments { result in
+                DispatchQueue.main.async {
+                    switch result {
+                    case .success(let comments):
+                        print("Fetched new Comments")
+                        self.comments = comments
+                        
+                    case .failure(let error):
+                        print(error)
+                    }
+                }
+                
+            }
+        }
+        else {
+            databasehandler.getComments { result in
                 DispatchQueue.main.async {
                     switch result {
                     case .success(let comments):
@@ -38,14 +53,14 @@ class CommentsViewModel: ObservableObject{
     }
     
     private func isNetworkConnected() -> Bool {
-        return true
+        return false
     }
     func fetchUsers() {
         CommentsViewServices().fetchUsers { result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let comments):
-                    print("Fetched new Comments")
+                    print("Fetched new Comments\(comments)")
                 case .failure(let error):
                     print(error)
                 }

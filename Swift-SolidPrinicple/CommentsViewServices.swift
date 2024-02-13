@@ -7,9 +7,16 @@
 
 import Foundation
 
-protocol CommentsViewServicesDelegate {
-    func getComments(completion: @escaping(Result<[CommentsModel], DemoError>) -> Void)
+
+protocol CommentsViewServicesDelegate : CommentsDelegate, UsersDelegate {
+}
+
+protocol UsersDelegate {
     func fetchUsers(completion: @escaping(Result<[UserModel], DemoError>) -> Void)
+}
+
+protocol CommentsDelegate {
+    func getComments(completion: @escaping(Result<[CommentsModel], DemoError>) -> Void)
 }
 
 class CommentsViewServices: CommentsViewServicesDelegate {
