@@ -17,3 +17,7 @@
    
 4. Inteface Segregation Principle (ISP): The client should not compelled to depende interfaces they don't use.It recommend designing interface tailored to the specific needs of clients, preventing the implementaion of unneccssary methods.By keeping interfaces focused and concise.
     The principle encourgaes loose coupling and eases maintainance.
+
+5. Dependency Inversion Principle (DIP): High-level modules should depend on abstractions rather than low-level modules. This principle highlights the usage of abstractions (interfaces or protocols) to decouple higher-level and lower-level modules. 
+    This Principle promotes dependency injection and inversion of control and facilitates testing and flexibilty in code design.
+ 

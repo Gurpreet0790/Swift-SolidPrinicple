@@ -90,6 +90,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		928AC5C22B7B06D4004156DD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				928AC5C02B7AF639004156DD /* Comments.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		928AC5C32B7B06D9004156DD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				928AC5BD2B7AE75E004156DD /* Readme.md */,
+				92C794162B742BE100820E0C /* CommentsRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		928AC5C42B7B06E1004156DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92C7940E2B742B9C00820E0C /* CommentsView.swift */,
+				92C794182B742BFC00820E0C /* DetailCommentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		928AC5C52B7B06E8004156DD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				92C794102B742BB100820E0C /* CommentsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		928AC5C62B7B06F0004156DD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				92C794122B742BC000820E0C /* CommentsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		928AC5C72B7B071A004156DD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				928AC5BE2B7AEE7B004156DD /* DatabaseHandler.swift */,
+				92C794142B742BCC00820E0C /* CommentsViewServices.swift */,
+				92C7941A2B742C0B00820E0C /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		92C793D82B742B5700820E0C = {
 			isa = PBXGroup;
 			children = (
@@ -115,18 +167,14 @@
 			children = (
 				92C793E42B742B5700820E0C /* Swift_SolidPrinicpleApp.swift */,
 				92C793E62B742B5700820E0C /* ContentView.swift */,
+				928AC5C72B7B071A004156DD /* Services */,
+				928AC5C62B7B06F0004156DD /* ViewModels */,
+				928AC5C52B7B06E8004156DD /* Models */,
+				928AC5C42B7B06E1004156DD /* Views */,
+				928AC5C32B7B06D9004156DD /* Components */,
+				928AC5C22B7B06D4004156DD /* Data */,
 				92C793E82B742B7700820E0C /* Assets.xcassets */,
 				92C793EA2B742B7700820E0C /* Preview Content */,
-				92C7940E2B742B9C00820E0C /* CommentsView.swift */,
-				92C794102B742BB100820E0C /* CommentsModel.swift */,
-				92C794122B742BC000820E0C /* CommentsViewModel.swift */,
-				92C794142B742BCC00820E0C /* CommentsViewServices.swift */,
-				92C794162B742BE100820E0C /* CommentsRow.swift */,
-				92C794182B742BFC00820E0C /* DetailCommentView.swift */,
-				92C7941A2B742C0B00820E0C /* NetworkManager.swift */,
-				928AC5BE2B7AEE7B004156DD /* DatabaseHandler.swift */,
-				928AC5C02B7AF639004156DD /* Comments.json */,
-				928AC5BD2B7AE75E004156DD /* Readme.md */,
 			);
 			path = "Swift-SolidPrinicple";
 			sourceTree = "<group>";
