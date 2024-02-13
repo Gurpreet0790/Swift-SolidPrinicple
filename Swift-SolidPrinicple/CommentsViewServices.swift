@@ -7,9 +7,20 @@
 
 import Foundation
 
-class CommentsViewServices {
-    
-    
+
+protocol CommentsViewServicesDelegate : CommentsDelegate, UsersDelegate {
+}
+
+protocol UsersDelegate {
+    func fetchUsers(completion: @escaping(Result<[UserModel], DemoError>) -> Void)
+}
+
+protocol CommentsDelegate {
+    func getComments(completion: @escaping(Result<[CommentsModel], DemoError>) -> Void)
+}
+
+class CommentsViewServices: CommentsViewServicesDelegate {
+
     func getComments(completion: @escaping(Result<[CommentsModel], DemoError>) -> Void){
         guard let url = URL(string: "https://jsonplaceholder.typicode.com/comments") else {
             return completion(.failure(.BadURL))
