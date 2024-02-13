@@ -8,11 +8,17 @@
 import SwiftUI
 
 struct CommentsRow: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+    var commentModel: CommentsModel
+        var body: some View {
+            VStack {
+                Text(commentModel.name ?? "NA")
+                    .font(.title3)
+                Text(commentModel.email ?? "NA")
+                    .font(.title2)
+            }
+        }
 }
 
 #Preview {
-    CommentsRow()
+    CommentsRow(commentModel: CommentsModel(postID: 1, id: 1, name: "Reet", email: "gurpreet.dhillon03abc@gmail.com", body: "Solid Principle"))
 }

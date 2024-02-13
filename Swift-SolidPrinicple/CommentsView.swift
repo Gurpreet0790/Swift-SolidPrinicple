@@ -8,8 +8,27 @@
 import SwiftUI
 
 struct CommentsView: View {
+    
+    @ObservedObject private var viewModel = CommentsViewModel()
+
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                List {
+                    ForEach(viewModel.comments) { comment in
+                        NavigationLink {
+                        } label: {
+                            CommentsRow(commentModel: comment)
+                        }
+                        
+                    }
+                }
+            }.onAppear {
+                viewModel.fetchComments()
+            }
+            .navigationTitle("Comment List")
+        }
     }
 }
 

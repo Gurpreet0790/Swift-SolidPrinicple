@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		928AC5BF2B7AEE7B004156DD /* DatabaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928AC5BE2B7AEE7B004156DD /* DatabaseHandler.swift */; };
+		928AC5C12B7AF639004156DD /* Comments.json in Resources */ = {isa = PBXBuildFile; fileRef = 928AC5C02B7AF639004156DD /* Comments.json */; };
 		92C793E52B742B5700820E0C /* Swift_SolidPrinicpleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C793E42B742B5700820E0C /* Swift_SolidPrinicpleApp.swift */; };
 		92C793E72B742B5700820E0C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C793E62B742B5700820E0C /* ContentView.swift */; };
 		92C793E92B742B7700820E0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C793E82B742B7700820E0C /* Assets.xcassets */; };
@@ -41,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		928AC5BD2B7AE75E004156DD /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		928AC5BE2B7AEE7B004156DD /* DatabaseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHandler.swift; sourceTree = "<group>"; };
+		928AC5C02B7AF639004156DD /* Comments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Comments.json; sourceTree = "<group>"; };
 		92C793E12B742B5700820E0C /* Swift-SolidPrinicple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-SolidPrinicple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C793E42B742B5700820E0C /* Swift_SolidPrinicpleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_SolidPrinicpleApp.swift; sourceTree = "<group>"; };
 		92C793E62B742B5700820E0C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -119,6 +124,9 @@
 				92C794162B742BE100820E0C /* CommentsRow.swift */,
 				92C794182B742BFC00820E0C /* DetailCommentView.swift */,
 				92C7941A2B742C0B00820E0C /* NetworkManager.swift */,
+				928AC5BD2B7AE75E004156DD /* Readme.md */,
+				928AC5BE2B7AEE7B004156DD /* DatabaseHandler.swift */,
+				928AC5C02B7AF639004156DD /* Comments.json */,
 			);
 			path = "Swift-SolidPrinicple";
 			sourceTree = "<group>";
@@ -253,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92C793EC2B742B7700820E0C /* Preview Assets.xcassets in Resources */,
+				928AC5C12B7AF639004156DD /* Comments.json in Resources */,
 				92C793E92B742B7700820E0C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +292,7 @@
 				92C794132B742BC000820E0C /* CommentsViewModel.swift in Sources */,
 				92C793E72B742B5700820E0C /* ContentView.swift in Sources */,
 				92C794192B742BFC00820E0C /* DetailCommentView.swift in Sources */,
+				928AC5BF2B7AEE7B004156DD /* DatabaseHandler.swift in Sources */,
 				92C794112B742BB100820E0C /* CommentsModel.swift in Sources */,
 				92C793E52B742B5700820E0C /* Swift_SolidPrinicpleApp.swift in Sources */,
 				92C794172B742BE100820E0C /* CommentsRow.swift in Sources */,
